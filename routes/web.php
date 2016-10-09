@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/chat', 'ChatController@index');
+Route::post('/chat', 'ChatController@sendMessage');
